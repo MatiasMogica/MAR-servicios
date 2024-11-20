@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page - Mantenimiento Eléctrico</title>
+  <!-- Enlace al archivo de estilos -->
+  <link rel="stylesheet" href="./style.css">
+  <!-- SweetAlert CSS y JS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</head>
+<body>
+  <!-- Hero Section -->
+  <header class="hero">
+    <h1>M.A.R servicios electricos</h1>
+    <p>Brindamos servicios especializados en instalación, reparación y mantenimiento para todo tipo de sistemas eléctricos. Tu seguridad y satisfacción son nuestra prioridad.</p>
+    <!-- Botón principal -->
+    <div id="modal-container"></div>
+    <button id="btnQuote">Solicitar Cotización</button>
+    
+  </header>
+
+  <!-- Servicios Section -->
+  <section id="services">
+    <div class="services-header">
+      <h2>Nuestros Servicios</h2>
+      <p>Ofrecemos soluciones eléctricas personalizadas con la mejor calidad.</p>
+    </div>
+    <div class="services-container">
+      <div class="service">
+        <h3>
+          <i class="fas fa-tools"></i>
+          Instalaciones Eléctricas
+        </h3>
+        <div class="carousel">
+          <div class="carousel-track">
+            <img src="./images/domici4.jpeg" alt="Instalación eléctrica 1">
+            <img src="./images/domici3.jpeg" alt="Instalación eléctrica 2">
+            <img src="./images/domici2.jpeg" alt="Instalación eléctrica 3">
+            <img src="./images/domici.jpeg" alt="Instalación eléctrica 4">
+          </div>
+          <button class="carousel-button prev">&lt;</button>
+          <button class="carousel-button next">&gt;</button>
+        </div>
+        <p>Realizamos instalaciones seguras para hogares y empresas.</p>
+      </div>
+  
+      <div class="service">
+        <h3>Mantenimiento Industrial</h3>
+        <div class="carousel">
+          <div class="carousel-track">
+            <img src="./images/ccn6.jpeg" alt="Mantenimiento industrial 1">
+            <img src="./images/ccn1.jpeg" alt="Mantenimiento industrial 2">
+            <img src="./images/ccn4.jpeg" alt="Mantenimiento industrial 3">
+            <img src="./images/ccn2.jpeg" alt="Mantenimiento industrial 4">
+          </div>
+          <button class="carousel-button prev">&lt;</button>
+          <button class="carousel-button next">&gt;</button>
+        </div>
+        <p>Ofrecemos servicios de mantenimiento eléctrico para maquinaria industrial.</p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Modal para mostrar imágenes -->
+<div id="image-modal" class="modal-img">
+  <span class="close">&times;</span>
+  <img class="modal-img-content" id="modal-image">
+</div>
+
+
+  <!-- Testimonios Section TODAVIA NO HAY TESTIMONIOS!!-->
+
+
+  <!-- Formulario de Contacto -->
+  <section class="contact">
+    <h2>Contáctanos</h2>
+    <p>¿Necesitas ayuda con una instalación o reparación eléctrica? Envíanos un mensaje y nos pondremos en contacto contigo a la brevedad.</p>
+    <form id="contactForm">
+      <input type="text" id="name" name="name" placeholder="Nombre" required>
+      <input type="email" id="email" name="email" placeholder="Correo Electrónico" required>
+      <textarea id="message" name="message" placeholder="Mensaje" required></textarea>
+      <button type="submit">Enviar Mensaje</button>
+    </form>
+  </section>
+
+  <a href="https://wa.me/5492284576596?text=Hola,%20me%20gustaría%20hacer%20una%20consulta." 
+   target="_blank" 
+   class="floating-button whatsapp" 
+   aria-label="Chatea con nosotros por WhatsApp">
+  <i class="fab fa-whatsapp"></i>
+</a>
+<a href="https://www.instagram.com/mar_servicios_/" target="_blank" class="floating-button instagram">
+  <i class="fab fa-instagram"></i>
+</a>
+
+  <!-- Enlace al archivo JavaScript -->
+  <script src="./js/form.js"></script>
+  <script src="./js/modal.js" defer></script>
+  <script src="./js/carrousel.js" defer></script>
+  <script src="./js/modalImg.js"></script>
+
+</body>
+</html>
