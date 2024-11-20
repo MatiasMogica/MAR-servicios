@@ -4,6 +4,7 @@ const nodemailer = require('nodemailer');
 require('dotenv').config();
 const app = express();
 const PORT = 3000;
+module.exports = app; // Exporta la app para Vercel
 
 app.use(express.json());
 app.use(cors());
